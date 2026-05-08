@@ -1,3 +1,12 @@
 spring:
   application:
     name: demo-web-auth
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo_web_auth
+    username: demo
+    password: demo
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
